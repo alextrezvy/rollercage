@@ -7,7 +7,7 @@ This is a captcha plugin for Apache Roller.
 It was tested on Apache Roller version 5.1.1.
 
 Dependencies:
-To build this plugin you need to specify the path to "WEB-INF/classes" directory of Roller in "pom.xml":
+To build this plugin you need maven. And you need to specify the path to "WEB-INF/classes" directory of Roller in "pom.xml":
 
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -19,6 +19,8 @@ To build this plugin you need to specify the path to "WEB-INF/classes" directory
 	 </compilerArgs>
         </configuration>
       </plugin>
+
+Then run: "mvn package".
 
 Installation:
 1. Put the jar with the plugin into the classpath. It can be either "lib" directory of Roller's WAR or Apache Tomcat's "lib" directory 
